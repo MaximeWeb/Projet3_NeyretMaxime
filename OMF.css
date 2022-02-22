@@ -1,0 +1,413 @@
+    body {
+        margin: auto;
+        font-family: roboto;
+    }
+    
+    .loading {
+        background: rgba(255, 255, 255, 0.9);
+        position: fixed;
+        right: 0%;
+        width: 100%;
+        height: 120%;
+        z-index: 9999;
+        animation: spin 8s linear;
+        animation-fill-mode: forwards;
+    }
+    
+    .ImageLoading {
+        position: relative;
+        left: 11%;
+        top: 20%;
+        border-radius: 50%;
+        box-shadow: 6px 6px 10px gray;
+        width: 300px;
+    }
+    
+    @keyframes spin {
+        99.999% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 0;
+            position: absolute;
+            top: -9999px;
+            left: -9999px;
+        }
+    }
+    
+    header {
+        height: 40px;
+        padding-bottom: 20px;
+        margin-bottom: 0px;
+        border-bottom: 3px inset rgb(180, 178, 178);
+    }
+    
+    section {
+        margin-top: 0px;
+    }
+    
+    h1 {
+        font-family: 'Shrikhand';
+        text-align: center;
+    }
+    
+    .PremiereSection {
+        height: 55px;
+        background-color: #D8D8D8;
+        text-align: center;
+        font-size: 18px;
+        padding-top: 1px;
+    }
+    
+    .PremiereSection p {
+        font-weight: bold;
+    }
+    
+    .PremiereSection i {
+        padding-right: 10px;
+    }
+    
+    .DeuxiemeSection {
+        height: 300px;
+        background-color: whitesmoke;
+        padding-top: 5px;
+    }
+    
+    .DeuxiemeSection a {
+        text-decoration: none;
+    }
+    
+    H2 {
+        width: 65%;
+        font-size: 26px;
+        padding-top: 10px;
+        text-align: center;
+        font-weight: bold;
+        padding-left: 80px;
+    }
+    
+    h3 {
+        font-size: 20px;
+        text-align: center;
+        padding-left: 20px;
+        padding-bottom: 15px;
+        font-weight: lighter;
+        color: gray;
+    }
+    
+    .BoutonExplorer {
+        height: 55px;
+        width: 220px;
+        background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+        border-radius: 30px;
+        margin: auto;
+        transform: scale(1);
+        transition: transform 400ms;
+    }
+    
+    .BoutonExplorer:hover {
+        transform: scale(1.15);
+    }
+    
+    .BoutonExplorer p {
+        text-align: center;
+        padding-top: 16px;
+        font-size: 17px;
+        color: white;
+    }
+    
+    .TroisiemeSection {
+        height: 440px;
+        padding-top: 20px;
+    }
+    
+    h4 {
+        font-size: 20px;
+        padding-left: 10px;
+    }
+    
+    .Bloc {
+        height: 75px;
+        width: 90%;
+        margin-left: 20px;
+        background-color: whitesmoke;
+        border-radius: 18px;
+        margin-bottom: 25px;
+        box-shadow: 2px 2px 4px rgb(211, 210, 210);
+    }
+    
+    .Bloc:hover {
+        background-color: rgb(230, 230, 248);
+    }
+    
+    .Bloc p {
+        padding-top: 25px;
+        font-weight: bold;
+        font-size: 18px;
+    }
+    
+    .Bloc i {
+        padding-left: 15px;
+        padding-right: 30px;
+        color: gray
+    }
+    
+    .Rond {
+        background-color: #9356DC;
+        border-radius: 100px;
+        text-align: center;
+        padding: 6px;
+        color: white;
+        position: relative;
+        right: 10px;
+    }
+    
+    #QuatriemeSection {
+        height: 1200px;
+        background-color: whitesmoke;
+        padding-top: 20px;
+    }
+    
+    h5 {
+        font-size: 25px;
+        padding-left: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .Bloc2 {
+        height: 250px;
+        width: 90%;
+        background-color: white;
+        margin-left: 20px;
+        margin-bottom: 20px;
+        border-radius: 20px;
+        margin-top: 0px;
+        box-shadow: 2px 2px 4px rgb(211, 210, 210);
+        transform: scale(1);
+        transition: transform 400ms;
+    }
+    
+    .Bloc2:hover {
+        transform: scale(1.05);
+        background-color: rgb(230, 230, 248);
+    }
+    
+    #QuatriemeSection a {
+        text-decoration: none;
+        color: black;
+    }
+    
+    .Image1Bloc2 {
+        width: 100%;
+        height: 70%;
+        background-image: url(Images/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        background-size: 100%;
+        background-position: center;
+        object-fit: cover;
+        padding-top: 1px;
+    }
+    
+    .Image2Bloc2 {
+        width: 100%;
+        height: 70%;
+        background-image: url(Images/stil-u2Lp8tXIcjw-unsplash.jpg);
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        background-size: 100%;
+        background-position: center;
+        object-fit: cover;
+        padding-top: 1px;
+    }
+    
+    .Image3Bloc2 {
+        width: 100%;
+        height: 70%;
+        background-image: url(Images/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        background-size: 100%;
+        background-position: center;
+        object-fit: cover;
+    }
+    
+    .Image4Bloc2 {
+        width: 100%;
+        height: 70%;
+        background-image: url(Images/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        background-size: 100%;
+        background-position: center;
+        object-fit: cover;
+    }
+    
+    .BlocImage {
+        width: 80px;
+        height: 26px;
+        padding-top: 4px;
+        text-align: center;
+        margin-left: 70%;
+        background-color: #99E2D0;
+        color: green;
+        font-weight: bold;
+    }
+    
+    .TitreBloc {
+        font-weight: bold;
+        margin-top: 10px;
+        font-size: 18px;
+        margin-bottom: 10px;
+        margin-left: 10px;
+    }
+    
+    .TitreBloc2 {
+        margin-top: 0px;
+        margin-left: 10px;
+    }
+    
+    #ContenerBloc {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .Bloc2 i {
+        font-size: 25px;
+        margin-top: 20px;
+        margin-right: 20px;
+    }
+    
+    .apres {
+        color: #9356DC;
+        display: none;
+    }
+    
+    #change:hover .avant {
+        display: none;
+    }
+    
+    #change:hover .apres {
+        display: inline-block;
+    }
+    
+    footer {
+        height: 220px;
+        background-color: #424242;
+        color: white;
+        padding-top: 1px;
+        padding-bottom: 15px;
+    }
+    
+    h6 {
+        font-size: 16px;
+        font-family: 'Shrikhand';
+        padding-left: 20px;
+        font-weight: lighter;
+        margin-bottom: 0px;
+    }
+    
+    footer p {
+        padding-left: 20px;
+    }
+    
+    footer i {
+        padding-right: 12px;
+    }
+    /* Responsiv TABLETTE */
+    
+    @media(min-width: 416px) and (max-width :890px) {
+        body {
+            width: auto;
+            height: 1800px;
+        }
+        .ImageLoading {
+            position: relative;
+            left: 25%;
+            top: 20%;
+            width: 400px;
+        }
+        .BoutonExplorer {
+            margin-top: 60px;
+            height: 65px;
+            width: 250px;
+        }
+        .BoutonExplorer p {
+            padding-top: 20px;
+            font-size: 20px;
+        }
+        .Bloc2 {
+            width: 45%;
+        }
+        .FlexBoxTablette {
+            display: flex;
+        }
+        #QuatriemeSection {
+            height: 700px;
+        }
+    }
+    /* Responsiv Destock */
+    
+    @media(min-width: 1100px) {
+        body {
+            width: auto;
+            background-color: whitesmoke;
+        }
+        header {
+            background-color: white;
+            padding-top: 1px;
+        }
+        h1 {
+            position: relative;
+            bottom: 10px;
+        }
+        .ImageLoading {
+            position: relative;
+            left: 35%;
+            top: 20%;
+            width: 500px;
+        }
+        h2 {
+            text-align: center;
+            padding-left: 14%;
+            padding-top: 5%;
+        }
+        h3 {
+            text-align: left;
+            padding-left: 10%;
+            padding-top: 5%;
+        }
+        .BoutonExplorer {
+            margin-left: 30%;
+            margin-top: 13%;
+        }
+        .Bloc {
+            width: 50%;
+            margin: auto;
+        }
+        .FlexBloxDestock {
+            display: flex;
+        }
+        .DeuxiemeSection {
+            height: 460px;
+            width: 50%;
+        }
+        .TroisiemeSection {
+            background-color: whitesmoke;
+            height: 445px;
+            width: 800px;
+        }
+        h4 {
+            padding-left: 40%;
+        }
+        .Bloc2 {
+            width: 45%;
+            margin-left: 50px;
+        }
+        .FlexBoxTablette {
+            display: flex;
+        }
+        #QuatriemeSection {
+            height: 700px;
+        }
+    }

@@ -1,0 +1,246 @@
+body {
+    margin: auto;
+    font-family: roboto;
+}
+
+header {
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+}
+
+header a {
+    text-decoration: none;
+    color: black;
+}
+
+header i {
+    font-size: 25px;
+    padding-top: 30px;
+}
+
+h1 {
+    font-family: 'Shrikhand';
+    margin-right: 80px;
+}
+
+.PremiereSection {
+    height: 250px;
+}
+
+.ImageTopSection {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.DeuxiemeSection {
+    background-color: whitesmoke;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    position: relative;
+    bottom: 60px;
+    padding-bottom: 30px;
+}
+
+.DeuxiemeSection a {
+    text-decoration: none;
+}
+
+.apres {
+    color: #9356DC;
+    display: none;
+}
+
+#change:hover .avant {
+    display: none;
+}
+
+#change:hover .apres {
+    display: inline-block;
+}
+
+#ContenerTopSection {
+    display: flex;
+    justify-content: space-around;
+}
+
+#ContenerTopSection i {
+    padding-top: 50px;
+    font-size: 25px;
+}
+
+h2 {
+    font-family: 'Shrikhand';
+    padding-top: 20px;
+    font-size: 28px;
+}
+
+h3 {
+    font-weight: lighter;
+    border-bottom: 4px solid #99E2D0;
+    width: 40px;
+    margin-left: 10px;
+    padding-bottom: 5px;
+}
+
+.Bloc {
+    width: 90%;
+    height: 60px;
+    background-color: white;
+    border-radius: 15px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    box-shadow: 2px 2px 4px gray;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10px;
+    position: relative;
+    -webkit-animation: Box 5s;
+    -moz-animation: Box 5s;
+    animation: Box 5s;
+}
+
+@keyframes Box {
+    0% {
+        bottom: 50px;
+    }
+    100% {
+        bottom: 0px;
+    }
+}
+
+.Bloc:hover .sous {
+    display: block;
+}
+
+.Bloc:hover .Prix {
+    position: absolute;
+    right: 60px;
+}
+
+.sous {
+    display: none;
+    position: relative;
+    right: 0px;
+    width: 50px;
+    height: 60px;
+    background-color: #99E2D0;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    font-size: 22px;
+    color: white;
+}
+
+.sous i {
+    padding-left: 13px;
+    padding-top: 20px;
+}
+
+.Bloc p {
+    font-size: 14px;
+}
+
+.TexteBloc {
+    font-weight: bold;
+    font-size: 18px;
+    position: relative;
+    bottom: 5px;
+}
+
+.Prix {
+    padding-top: 20px;
+    padding-right: 10px;
+    font-weight: bold;
+}
+
+.BoutonExplorer {
+    height: 55px;
+    width: 220px;
+    background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+    border-radius: 30px;
+    margin-left: 25%;
+    margin-top: 40px;
+    transform: scale(1);
+    transition: transform 400ms;
+}
+
+.BoutonExplorer:hover {
+    transform: scale(1.15);
+}
+
+.BoutonExplorer p {
+    text-align: center;
+    padding-top: 16px;
+    font-size: 17px;
+    color: white;
+}
+
+footer {
+    height: 220px;
+    background-color: #424242;
+    color: white;
+    padding-top: 1px;
+    padding-bottom: 15px;
+    position: relative;
+    bottom: 60px;
+}
+
+h6 {
+    font-size: 16px;
+    font-family: 'Shrikhand';
+    padding-left: 20px;
+    font-weight: lighter;
+    margin-bottom: 0px;
+}
+
+footer p {
+    padding-left: 20px;
+}
+
+footer i {
+    padding-right: 12px;
+}
+
+@media(min-width: 416px) and (max-width :768px) {
+    body {
+        width: auto;
+        height: 1560px;
+    }
+    .BoutonExplorer {
+        margin: auto;
+    }
+    header {
+        justify-content: flex-start;
+    }
+    header a {
+        padding-right: 30%;
+        padding-left: 5%;
+    }
+}
+
+
+/* Responsiv Destock */
+
+@media(min-width: 1100px) {
+    body {
+        width: auto;
+        height: 1100px;
+    }
+    .Bloc {
+        width: 30%;
+    }
+    .contener {
+        display: flex;
+    }
+    .BoutonExplorer {
+        margin: auto;
+    }
+    header {
+        justify-content: flex-start;
+    }
+    header a {
+        padding-right: 30%;
+        padding-left: 5%;
+    }
+}
